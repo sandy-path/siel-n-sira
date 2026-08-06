@@ -521,6 +521,7 @@
   color: #ffffff;
   font-weight: 750;
   text-decoration: none;
+  transition: opacity 160ms ease;
 }
 
 .previewChoice[data-workspace="sira"] > a {
@@ -533,12 +534,9 @@
   background: var(--seil);
 }
 
-.previewChoice[data-workspace="sira"] > a:hover {
-  background: #00584f;
-}
-
+.previewChoice[data-workspace="sira"] > a:hover,
 .previewChoice[data-workspace="seil"] > a:hover {
-  background: #703b10;
+  opacity: 0.78;
 }
 
 .productionNote {
