@@ -213,6 +213,7 @@
   border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
+  transition: opacity 160ms ease;
 }
 
 .siraAction {
@@ -221,18 +222,15 @@
   color: #ffffff !important;
 }
 
-.siraAction:hover {
-  background: #00584f;
-}
-
 .seilAction {
   border-color: var(--seil);
   background: var(--seil);
   color: #ffffff !important;
 }
 
+.siraAction:hover,
 .seilAction:hover {
-  background: #703b10;
+  opacity: 0.78;
 }
 
 .heroActions svg {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 
 import "./globals.css";
@@ -15,12 +15,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: "SIRA + SEIL",
@@ -31,9 +25,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <div className="sandbox-disclosure" role="status">Fictional company and products | sandbox</div>
         <Providers>{children}</Providers>
       </body>
     </html>

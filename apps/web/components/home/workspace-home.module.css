@@ -349,6 +349,7 @@
   border-radius: 6px;
   font-weight: 750;
   text-decoration: none;
+  transition: opacity 160ms ease;
 }
 
 .workspaceCard > a svg {
@@ -368,12 +369,9 @@
   color: #ffffff;
 }
 
-.workspaceCard[data-workspace="sira"] > a:hover {
-  background: #00584f;
-}
-
+.workspaceCard[data-workspace="sira"] > a:hover,
 .workspaceCard[data-workspace="seil"] > a:hover {
-  background: #703b10;
+  opacity: 0.78;
 }
 
 .noWorkspace {
